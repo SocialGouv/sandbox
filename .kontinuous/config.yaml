@@ -4,4 +4,4 @@ dependencies:
   fabrique:
     import: SocialGouv/kontinuous/plugins/fabrique
     options:
-      registry: harbor
+      registry: harbor.fabrique.social.gouv.fr
