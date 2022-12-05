@@ -12,3 +12,5 @@ jobs:
   kontinuous:
     uses: SocialGouv/kontinuous/.github/workflows/workflow-webhook.yaml@v1
     secrets: inherit
+    with:
+      triggerWebhook: true
