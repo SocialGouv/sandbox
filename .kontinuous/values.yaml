@@ -12,7 +12,7 @@ app:
 jobs:
   runs:
     build-app:
-      use: build@v1
+      use: build
       with:
         imagePackage: app
         #        registrySecretRefName: harbor
