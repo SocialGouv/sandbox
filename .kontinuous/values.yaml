@@ -1,6 +1,6 @@
 app:
   containerPort: 8080
-  needs: [build-app]
+  ~needs: [build-app]
   ingress:
     annotations:
       nginx.ingress.kubernetes.io/configuration-snippet: |
