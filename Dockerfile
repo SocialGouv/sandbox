@@ -1,4 +1,4 @@
-FROM ghcr.io/socialgouv/docker/nginx:7.0.1
+FROM ghcr.io/socialgouv/docker/nginx:7.1.1
 
 
 ARG COMMIT_SHA
