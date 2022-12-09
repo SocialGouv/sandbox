@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/SocialGouv/sandbox/compare/v1.0.0...v1.0.1) (2022-12-09)
+
+
+### Bug Fixes
+
+* release ([8c0b598](https://github.com/SocialGouv/sandbox/commit/8c0b598ddd51afcd457e3f0d23dcdb5cd5fa6751))
+
 # 1.0.0 (2022-12-09)
 
 
