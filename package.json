@@ -1,5 +1,13 @@
 {
   "name": "sandbox",
   "version": "1.0.1",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "is-ci": "^3.0.1",
+    "node-talisman": "^1.29.6"
+  },
+  "scripts": {
+    "postinstall": "is-ci || husky install"
+  }
 }
