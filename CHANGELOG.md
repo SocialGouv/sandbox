@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/SocialGouv/sandbox/compare/v1.0.1...v1.1.0) (2022-12-13)
+
+
+### Features
+
+* add talisman ([a18a106](https://github.com/SocialGouv/sandbox/commit/a18a1063a81f518a17aed8d1b7baa6cae4eb2ade))
+
 ## [1.0.1](https://github.com/SocialGouv/sandbox/compare/v1.0.0...v1.0.1) (2022-12-09)
 
 
