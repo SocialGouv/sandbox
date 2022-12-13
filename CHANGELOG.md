@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/SocialGouv/sandbox/compare/v1.1.0...v1.1.1) (2022-12-13)
+
+
+### Bug Fixes
+
+* friendly message ([#5](https://github.com/SocialGouv/sandbox/issues/5)) ([91d0a77](https://github.com/SocialGouv/sandbox/commit/91d0a77f6cc75041c72020a2374fef9aa9bf95a0))
+
 # [1.1.0](https://github.com/SocialGouv/sandbox/compare/v1.0.1...v1.1.0) (2022-12-13)
 
 
