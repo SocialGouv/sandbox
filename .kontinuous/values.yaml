@@ -1,5 +1,6 @@
 app:
-  containerPort: 8080
+  probesPath: /healthz
+  containerPort: 3000
   ~needs: [build-app]
   ingress:
     annotations:

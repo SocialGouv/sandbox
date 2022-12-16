@@ -1,2 +1,6 @@
+fileignoreconfig:
+- filename: Dockerfile
+  checksum: be4467b22c82e4d98dbde3ef1a0ee343b8d2f105800eb62e2e7e36393fa67cff
 scopeconfig:
-  - scope: node
+- scope: node
+version: "1.0"
