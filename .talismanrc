@@ -1,2 +1,8 @@
+fileignoreconfig:
+- filename: Dockerfile
+  checksum: 16ab37705daf9db7433b71b87e6918cccb883b043f9e9f571ceeb5eb99fcfdbe
+- filename: next-env.d.ts
+  checksum: f1d9fafa945cda0af9b79c9e47d57637a6e352d972c14e499bee1bf5054e6a5b
 scopeconfig:
-  - scope: node
+- scope: node
+version: "1.0"
