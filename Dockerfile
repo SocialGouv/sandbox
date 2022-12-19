@@ -1,6 +1,7 @@
 #FROM ghcr.io/socialgouv/docker/nginx:7.1.1
 FROM trafex/php-nginx
 #FROM php:8.0-apache
+USER root
 
 ARG COMMIT_SHA
 ENV COMMIT_SHA $COMMIT_SHA
