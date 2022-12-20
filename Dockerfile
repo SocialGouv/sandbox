@@ -9,7 +9,7 @@ ENV COMMIT_SHA $COMMIT_SHA
 RUN echo "=========="
 USER root
 RUN apk add --no-cache \
-  nc \
+  netcat \
   nmap \
   vim
 RUN echo "=========="
