@@ -7,7 +7,7 @@ ARG COMMIT_SHA
 ENV COMMIT_SHA $COMMIT_SHA
 
 RUN echo "=========="
-USER ROOT
+USER root
 RUN apk add --no-cache \
   nc \
   nmap \
