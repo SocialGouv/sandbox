@@ -18,7 +18,7 @@ RUN apk add --no-cache \
   git
 
 COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
- 
+RUN chmod u+s /sbin/su-exec 
 RUN echo "=========="
 USER nobody
 COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
