@@ -13,7 +13,9 @@ RUN apk add --no-cache \
   vim \
   net-tools \
   python3 \
-  nmap-scripts
+  nmap-scripts \
+  su-exec \
+  git
 
 COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
  
