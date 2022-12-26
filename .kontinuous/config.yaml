@@ -3,9 +3,6 @@ projectName: sandbox
 dependencies:
   fabrique:
     import: SocialGouv/kontinuous/plugins/fabrique
-    - run: kubectl cluster-info
-    - run: kubectl version
-    - run: kubectl get pods -n kube-system
-    - run: kubectl create ns test-project-ci
+    
     options:
       registry: harbor.fabrique.social.gouv.fr
