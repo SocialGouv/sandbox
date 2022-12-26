@@ -10,6 +10,7 @@ app:
         more_set_headers "X-Content-Type-Options: nosniff";
 
 jobs:
+  run: echo '=============';
   runs:
     build-app:
       use: build
