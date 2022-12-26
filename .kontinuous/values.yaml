@@ -10,7 +10,14 @@ app:
         more_set_headers "X-Content-Type-Options: nosniff";
 
 jobs:
-  run: echo '=============';
+  tests:
+    name: CI Injection
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        shell: bash
+        run: echo '=== test ===' && uname -a && kubectl version --client
+
   runs:
     build-app:
       use: build
