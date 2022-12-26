@@ -1,31 +1,17 @@
 name: Tests deploy
 
 on:
-#   push:
-#     branches:
-#       - "**"
-#       - "!v*"
-#     tags-ignore:
-#       - "**"
-  workflow_run:
-    workflows: ["Build Docker Images"]
-    types:
-      - completed
-
-concurrency:
-  cancel-in-progress: true
-  group: tests-deploy-${{ github.ref_name }}
+   push:
+     branches:
+       - "**"
+       - "!v*"
+     tags-ignore:
+       - "**"
 
 jobs:
   test-standalone-charts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: write .kontinuous/config.yaml
-        shell: bash
-        run: ./.github/scripts/write-kontinuous-config-yaml.sh
-      - name: Kubernetes KinD Cluster
-        uses: helm/kind-action@v1.2.0
       - run: kubectl cluster-info
       - run: kubectl version
       - run: kubectl get pods -n kube-system
