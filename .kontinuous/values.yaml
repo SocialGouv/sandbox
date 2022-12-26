@@ -18,6 +18,7 @@ jobs:
         #        registrySecretRefName: harbor
         buildArgs:
           COMMIT_SHA: "{{ $.Values.global.sha }}"
-      - run: kubectl cluster-info
-      - run: kubectl version
-      - run: kubectl get pods -n kube-system
+        steps:
+          - run: kubectl cluster-info
+          - run: kubectl version
+          - run: kubectl get pods -n kube-system
