@@ -355,6 +355,14 @@
 
 ### Bug Fixes
 
+* clean ([a2130cb](https://github.com/SocialGouv/sandbox/commit/a2130cb69bb27c20c2ae10017dd7db7db979d7a4))
+* up to workflows ([bad3dd1](https://github.com/SocialGouv/sandbox/commit/bad3dd138fdb38f0b194254b12d9d33871adae47))
+
+## [1.1.2](https://github.com/SocialGouv/sandbox/compare/v1.1.1...v1.1.2) (2023-01-06)
+
+
+### Bug Fixes
+
 * up to workflows ([bad3dd1](https://github.com/SocialGouv/sandbox/commit/bad3dd138fdb38f0b194254b12d9d33871adae47))
 
 ## [1.1.2](https://github.com/SocialGouv/sandbox/compare/v1.1.1...v1.1.2) (2023-01-06)
