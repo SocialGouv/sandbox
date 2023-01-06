@@ -1,8 +1,11 @@
-name: 🚀 Production
+name: 😎 PreProd
 on:
   workflow_dispatch:
   push:
-    tags:
+    branches:
+      - "master"
+      - "main"
+    tags-ignore:
       - v*
 
 concurrency:
@@ -12,5 +15,5 @@ concurrency:
 jobs:
   kontinuous:
     name: "Deploy on Kubernetes 🐳"
-    uses: socialgouv/workflows/.github/workflows/use-ks-wh-production.yaml@v1
+    uses: socialgouv/workflows/.github/workflows/use-ks-wh-preproduction.yaml@v1
     secrets: inherit

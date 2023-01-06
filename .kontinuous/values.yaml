@@ -15,6 +15,5 @@ jobs:
       use: build
       with:
         imagePackage: app
-        #        registrySecretRefName: harbor
         buildArgs:
           COMMIT_SHA: "{{ $.Values.global.sha }}"

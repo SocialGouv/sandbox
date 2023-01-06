@@ -1,7 +1,9 @@
-name: ♻️ Deactivate
+name: 👓 Review Auto
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches:
+      - "feat/**"
+      - "fix/**"
 
 concurrency:
   cancel-in-progress: true
@@ -9,5 +11,5 @@ concurrency:
 
 jobs:
   kontinuous:
-    uses: socialgouv/workflows/.github/workflows/use-ks-wh-deactivate.yaml@v1
+    uses: socialgouv/workflows/.github/workflows/use-ks-wh-review-auto.yaml@v1
     secrets: inherit
