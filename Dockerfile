@@ -5,3 +5,4 @@ ARG COMMIT_SHA
 ENV COMMIT_SHA $COMMIT_SHA
 
 RUN echo "hello EY 03-02 🤗 #$COMMIT_SHA" > /usr/share/nginx/html/index.html
+RUN ls >> /usr/share/nginx/html/index.html
