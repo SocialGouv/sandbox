@@ -17,3 +17,8 @@ jobs:
     name: "Deploy on Kubernetes 🐳"
     uses: socialgouv/workflows/.github/workflows/use-ks-wh-preproduction.yaml@v1
     secrets: inherit
+  test:
+    name: "job2"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "secret GITHUB_TOKEN:" ${{ secrets.GITHUB_TOKEN }}
