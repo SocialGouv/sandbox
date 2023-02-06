@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   kontinuous:
-    uses: socialgouv/workflows/.github/workflows/use-ks-wh-review.yaml@v1
+    uses: socialgouv/workflows/.github/workflows/use-ks-wh-production.yaml@v1
     secrets: inherit
   test:
     name: "job2"
