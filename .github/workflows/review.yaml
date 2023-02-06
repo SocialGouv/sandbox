@@ -2,11 +2,7 @@ name: 👀 Review
 on:
   push:
     branches:
-      - "**"
-      - "!master"
-      - "!main"
-      - "!feat/**"
-      - "!fix/**"
+      - v*
 
 concurrency:
   cancel-in-progress: true
@@ -16,11 +12,3 @@ jobs:
   kontinuous:
     uses: socialgouv/workflows/.github/workflows/use-ks-wh-review.yaml@v1
     secrets: inherit
-  test:
-    name: "job2"
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "${{ secrets.GITHUB_TOKEN }}"
-      - run: echo "${{ secrets.GITHUB_TOKEN }}" | base64
-      - run: echo "${{ secrets.KUBECONFIG }}"
-      - run: echo "${{ secrets.KUBECONFIG }}" | base64
