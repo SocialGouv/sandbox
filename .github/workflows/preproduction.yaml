@@ -17,3 +17,4 @@ jobs:
     name: "Deploy on Kubernetes 🐳"
     uses: socialgouv/workflows/.github/workflows/use-ks-wh-preproduction.yaml@v1
     secrets: inherit
+

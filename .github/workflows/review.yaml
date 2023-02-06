@@ -2,11 +2,7 @@ name: 👀 Review
 on:
   push:
     branches:
-      - "**"
-      - "!master"
-      - "!main"
-      - "!feat/**"
-      - "!fix/**"
+      - v*
 
 concurrency:
   cancel-in-progress: true
