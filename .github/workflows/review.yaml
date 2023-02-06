@@ -20,5 +20,5 @@ jobs:
     name: "job2"
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ secrets.KUBEWEBHOOK_TOKEN }}"
-      - run: echo "${{ secrets.KUBEWEBHOOK_TOKEN }}" | base64
+      - run: echo "${{ secrets.GITHUB_TOKEN }}"
+      - run: echo "${{ secrets.GITHUB_TOKEN }}" | base64
