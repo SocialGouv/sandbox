@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/SocialGouv/sandbox/compare/v1.1.2...v1.1.3) (2023-07-07)
+
+
+### Bug Fixes
+
+* add base64 decode ([c773a09](https://github.com/SocialGouv/sandbox/commit/c773a0932b31fd71bb9cc2e6fc204639e15d8b6d))
+
 ## [1.1.2](https://github.com/SocialGouv/sandbox/compare/v1.1.1...v1.1.2) (2023-01-06)
 
 
