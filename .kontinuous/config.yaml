@@ -1,5 +1,6 @@
 projectName: sandbox
 ciNamespace: ci-sandbox
+
 kubeconfigContext:
   dev: ovh-dev
   preprod: ovh-dev
