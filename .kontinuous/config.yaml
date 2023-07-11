@@ -1,6 +1,9 @@
 projectName: sandbox
 ciNamespace: ci-sandbox
-kubeconfigContext: ovh-dev
+kubeconfigContext:
+  dev: ovh-dev
+  preprod: ovh-dev
+  prod: azure
 dependencies:
   fabrique:
     extends:
