@@ -4,7 +4,6 @@ ciNamespace: ci-sandbox
 kubeconfigContext:
   dev: ovh-dev
   preprod: ovh-dev
-  prod: azure
 dependencies:
   fabrique:
     extends:
