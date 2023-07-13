@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/SocialGouv/sandbox/compare/v1.1.3...v1.1.4) (2023-07-13)
+
+
+### Bug Fixes
+
+* dummy trigger ([a6fa7fe](https://github.com/SocialGouv/sandbox/commit/a6fa7fed580793d539b5daaa36463ff789f5425d))
+
 ## [1.1.3](https://github.com/SocialGouv/sandbox/compare/v1.1.2...v1.1.3) (2023-07-07)
 
 
