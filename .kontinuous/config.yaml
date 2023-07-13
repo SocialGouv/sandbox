@@ -1,8 +1,12 @@
 projectName: sandbox
+ciNamespace: ci-sandbox
 
+kubeconfigContext:
+  dev: ovh-dev
+  preprod: ovh-dev
+  prod: azure
 dependencies:
   fabrique:
-    import: SocialGouv/kontinuous/plugins/fabrique
-    options:
-      registry: harbor.fabrique.social.gouv.fr
-
+    extends:
+    - name: ovh
+      ifEnv: [dev,preprod]
